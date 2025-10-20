@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;       
+    min-height: 80vh;              
+}
+
+.map-column {
+    width: 100%;
+    padding: 10px;
+}
+
+.map-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+}
+
+.country-info {
+    width: 20%;
+    border-left: 2px solid black;
+    padding: 10px;
+    background-color: #f3eeee;
+}
+
+.country-info h2 {
+    font-size: 1.2em;
+}
+
