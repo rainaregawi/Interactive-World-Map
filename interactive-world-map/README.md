@@ -1,7 +1,6 @@
 # InteractiveWorldMap
 
 Student ID# 012267568
-Angular Version: 
 Angular CLI: 17.3.17
 Node: 22.17.0 (Unsupported)
 Package Manager: npm 11.0.0
