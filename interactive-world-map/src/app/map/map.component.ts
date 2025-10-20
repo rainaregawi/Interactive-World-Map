@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './map.component.css'
 })
 export class MapComponent {
-
+  title = 'Map';
 }
