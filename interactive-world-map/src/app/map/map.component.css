@@ -1,8 +1,8 @@
 .container {
     display: flex;
     flex-direction: row;
-    border: 2px solid black;       
-    min-height: 80vh;              
+    border: 2px solid black;
+    min-height: 80vh;
 }
 
 .map-column {
@@ -10,12 +10,19 @@
     padding: 10px;
 }
 
-.map-container img {
+
+.map-container {
+    width: 100%;
+    height: auto;
+}
+.map-container svg {
     width: 100%;
     height: auto;
     display: block;
-    cursor: pointer;
+    -webkit-tap-highlight-color: transparent; 
 }
+
+
 
 .country-info {
     width: 20%;
@@ -23,8 +30,29 @@
     padding: 10px;
     background-color: #f3eeee;
 }
-
 .country-info h2 {
     font-size: 1.2em;
 }
+
+
+.map-container path {
+    cursor: pointer;
+    transition: fill 0.2s ease;
+    user-select: none;
+}
+
+.map-container path:hover:not(.selected) {
+    fill: #7da4a9 !important; 
+}
+
+.map-container path.selected {
+    fill: #606c70 !important; 
+}
+
+
+
+
+
+
+
 
