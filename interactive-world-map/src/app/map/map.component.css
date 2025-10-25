@@ -1,54 +1,74 @@
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #d9d9d9;
+}
+
 .container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: row;
-    border: 2px solid black;
-    min-height: 80vh;
+    background-color: #d9d9d9;
+    box-sizing: border-box;
 }
 
 .map-column {
-    width: 100%;
-    padding: 10px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 
 .map-container {
-    width: 100%;
-    height: auto;
+    width: 95%;
+    max-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .map-container svg {
     width: 100%;
     height: auto;
     display: block;
-    -webkit-tap-highlight-color: transparent; 
+    max-height: 90vh;
 }
-
-
 
 .country-info {
-    width: 20%;
-    border-left: 2px solid black;
-    padding: 10px;
-    background-color: #f3eeee;
-}
-.country-info h2 {
-    font-size: 1.2em;
+    width: 28%;
+    background-color: #f1f1f1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
+.country-info h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 0;
+}
 
 .map-container path {
     cursor: pointer;
-    transition: fill 0.2s ease;
-    user-select: none;
 }
 
 .map-container path:hover:not(.selected) {
-    fill: #7da4a9 !important; 
+    fill: #91c8df;
 }
 
 .map-container path.selected {
-    fill: #606c70 !important; 
+    fill: #5ea3a3 !important;
 }
-
 
 
 

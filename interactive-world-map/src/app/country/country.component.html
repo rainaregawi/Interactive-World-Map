@@ -1,10 +1,23 @@
-<div class="country-info">
-    <h2>Country Info</h2>
-    <p><strong>Country Name:</strong> The United States of America</p>
-    <p><strong>Capital:</strong> Gotham City</p>
-    <p><strong>Region:</strong> Eastern Seaboard</p>
-    <p><strong>Income Level:</strong> High income</p>
-    <p><strong>Latitude:</strong> 40.7128° N</p>
-    <p><strong>Longitude:</strong> 74.0060° W</p>
+<div class="country-info-panel">
+    <h2>Country Information</h2>
+    
+    <div *ngIf="!info">
+        <p style="color: black;">Select a country to see details.</p>
+    </div>
+    
+    <div *ngIf="info?.noData">
+        <p style="color: black;">No data available for this country.</p>
+    </div>
+    
+    <div *ngIf="info && !info.noData && info.name !== 'N/A'">
+        <p><strong>Country Name:</strong> {{ info.name }}</p>
+        <p><strong>Capital:</strong> {{ info.capital }}</p>
+        <p><strong>Region:</strong> {{ info.region }}</p>
+        <p><strong>Income Level:</strong> {{ info.income }}</p>
+        <p><strong>Latitude:</strong> {{ info.latitude }}</p>
+        <p><strong>Longitude:</strong> {{ info.longitude }}</p>
+    </div>
 </div>
+
+
 
