@@ -13,8 +13,7 @@ This project was developed as part of WGU’s JavaScript Programming (D280) cour
 ## Tech Stack
 - Language: JavaScript (TypeScript), HTML, CSS  
 - Framework: Angular
-- Data Format: JSON
-- API / Data Source: World Bank API  
+- APIs/Data: REST API (World Bank API), JSON
 - Tools: Visual Studio Code, npm, Git, GitHub
 
 ## How to Run
@@ -31,6 +30,7 @@ This project was developed as part of WGU’s JavaScript Programming (D280) cour
 
 
  
+
 
 
 
