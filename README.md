@@ -11,10 +11,11 @@ This project was developed as part of WGU’s JavaScript Programming (D280) cour
 - Modular design following best practices for component-based architecture  
 
 ## Tech Stack
-- Language: JavaScript (TypeScript)  
-- Framework: Angular  
+- Language: JavaScript (TypeScript), HTML, CSS  
+- Framework: Angular
+- Data Format: JSON
 - API / Data Source: World Bank API  
-- Tools: Visual Studio Code, Git Bash 
+- Tools: Visual Studio Code, npm, Git, GitHub
 
 ## How to Run
 1. Clone this repository
@@ -30,6 +31,7 @@ This project was developed as part of WGU’s JavaScript Programming (D280) cour
 
 
  
+
 
 
 
